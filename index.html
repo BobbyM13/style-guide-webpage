@@ -1,15 +1,329 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NIST Style Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+	<title>NIST Style Guide</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> 
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-    <h1>This is my NIST Style Guide
-    </h1>
+
+	<!-- <section class="header">
+		<h1>NIST Style Guide</h1>
+	</section> -->
+	<section class="wrapper">
+		
+		<aside class="sidenav">
+		<nav> 
+			<ul>
+				<li><a href="#top"><img class="logohead" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/NIST_logo.svg/2000px-NIST_logo.svg.png" alt="NIST Logo" width="140px;"></a></li>
+				<li><a href="#top">Guidelines</a></li>
+				<li><a href="#logotreat">Logo</a></li>
+				<li><a href="#typo">Typography</a></li>
+				<li><a href="#colortreat">Colors</a></li>
+				<li><a href="#buttontreat">Buttons</a></li>
+				<li><a href="#iconstreat">Icons</a></li>
+				<li><a href="#imagestreat">Images</a></li>
+			</ul>
+		</nav>
+		</aside>
+
+		<div class="content">
+			<section class="firstdiv" id="top">
+				<h1>Welcome to the NIST Style Guide</h1>
+				<p>NIST, or The National Institute of Standards and Technology is a physical sciences laboratory, <br>and a non-regulatory agency of the United States Department of Commerce. <br>Its mission is to promote innovation and industrial competitiveness</p>
+			</section>
+
+			<section class="logo" id="logotreat">
+				<div class="heading">
+					<h1>Logo Treatment</h1>
+					<p>This is what the NIST logo looks black on white, and white on black.</p>
+				</div>
+				
+				<div class="logo-images">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/NIST_logo.svg/2000px-NIST_logo.svg.png" width="260px;" alt="NIST Logo, Black on White" title="NIST Logo, Black on White">
+					<img src="https://professional.brown.edu/wp-content/uploads/2018/04/nist.jpg" width="260px;" alt="NIST Logo White on Black" title="NIST Logo White on Black">
+				</div>
+			</section>
+
+			<section class="type" id="typo">
+				<div class="lefthalf">
+					<h1>Typography</h1>
+					<p>NIST only uses <strong>Source Sans</strong> as the font. <br>Below is the CSS code:</p>
+					<pre>font-family: Source-Sans, Verdana, sans-sarif;</pre>
+				</div>
+				
+				<div class="righthalf">
+					<h1>This is an H1</h1>
+					<h2>This is an H2</h2>
+					<h3>This is an H3</h3>
+					<h4>This is an H4</h4>
+					<h5>This is an H5</h5>
+				</div>
+			</section>
+			
+			<section class="colors" id="colortreat">
+				<div class="upper">
+					<h1>Color Treatment</h1>
+				<p>NIST primarily uses 8 different colors: 3 blues, one green, one red, one yellow, one black, and one white.</p>
+				<strong>Hover over the colors to see their hex code! The CSS is below.</strong>
+				</div>
+
+				<div class="colorboxes">
+					<div class="color1"><p>#0D4763</p></div>
+					<div class="color2"><p>#0D4763</p></div>
+					<div class="color3"><p>#0D4763</p></div>
+					<div class="color4"><p>#0D4763</p></div>
+					<div class="color5"><p>#0D4763</p></div>
+					<div class="color6"><p>#0D4763</p></div>
+					<div class="color7"><p>#0D4763</p></div>
+					<div class="color8"><p>#0D4763</p></div>
+				</div>
+				<pre id="colorcode">
+				.colorboxes {
+					display: flex;
+					flex-direction: row;
+					flex: 1;
+					margin-top: 30px;
+				}
+				
+				.color1 {
+					background-color: rgb(13, 71, 110);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color1 p {
+					color: rgb(13, 71, 110);
+					margin: auto;
+				}
+				
+				.color1:hover p {
+					color: white;
+				}
+				
+				.color2 {
+					background-color: rgb(18, 101, 157);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color2 p {
+					color: rgb(18, 101, 157);
+					margin: auto;
+				}
+				
+				.color2:hover p {
+					color: white;
+				}
+				
+				.color3 {
+					background-color: rgb(228, 242, 252);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color3 p {
+					color: rgb(228, 242, 252);
+					margin: auto;
+				}
+				
+				.color3:hover p {
+					color: rgb(51, 51, 51);
+				}
+				
+				.color4 {
+					background-color: rgb(38, 123, 46);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color4 p {
+					color: rgb(38, 123, 46);
+					margin: auto;
+				}
+				
+				.color4:hover p {
+					color: white;
+				}
+				
+				.color5 {
+					background-color: rgb(236, 27, 47);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color5 p {
+					color: rgb(236, 27, 47);
+					margin: auto;
+				}
+				
+				.color5:hover p {
+					color: white;
+				}
+				
+				.color6 {
+					background-color: rgb(227, 198, 33);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color6 p {
+					color: rgb(227, 198, 33);
+					margin: auto;
+				}
+				
+				.color6:hover p {
+					color: white;
+				}
+				
+				.color7 {
+					height: 150px;
+					box-sizing: border-box;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color7 p {
+					color: white;
+					margin: auto;
+				}
+				
+				.color7:hover p {
+					color: rgb(51, 51, 51);
+				}
+				
+				.color8 {
+					background-color: rgb(51, 51, 51);
+					box-sizing: border-box;
+					height: 150px;
+					display: flex;
+					padding: 15px;
+				}
+				
+				.color8 p {
+					color: rgb(51, 51, 51);
+					margin: auto;
+				}
+				
+				.color8:hover p {
+					color: white;
+				}</pre>
+				<a id="show-more">Show More</a>
+			</section>
+
+			<section class="buttons" id="buttontreat">
+				<div class="b-upper">
+					<h1>Button Styles</h1>
+				<p>NIST uses two different buttons, with three states each.</p>
+				<strong>Hover over the boxes and click/hold on them to see them in action. The CSS is below!</strong>
+				</div>
+
+				<div class="b-lower">
+					 <button id="version1" type="button">View All Data</button><p class="firstp">Button One</p>
+					 <button id="version2" type="button">Feedback</button><p>Button Two</p>
+				</div>
+				<pre id="buttoncode">
+						#version1 {
+							background-color: rgb(51, 51, 51);
+							border: none;
+							max-width: 200px;
+							
+							color: #fff;
+							font-family: 'Source Sans Pro', sans-serif;
+							  font-size: 18px;
+						
+							  padding: 2px 40px;
+							  text-decoration: none;
+						}
+						
+						#version1:hover {
+							background-color: grey;
+						}
+						
+						#version1:active {
+							color: rgb(227, 198, 33);
+						}
+						
+						#version2 {
+							background-color: rgb(18, 101, 157);
+							border: 2px solid rgb(18, 101, 157);
+							border-radius: 2px;
+							max-width: 150px;
+						
+							color: #fff;
+							font-family: 'Source Sans Pro', sans-serif;
+							  font-size: 18px;
+						
+							  padding: 10px 10px;
+							  text-decoration: none;
+						}
+						
+						#version2:hover {
+							background-color: rgb(13, 71, 110);
+							border: 2px solid rgb(13, 71, 110);
+						}
+						
+						#version2:active {
+							border-radius: 9px;
+						}
+				</pre>
+				<a id="show-more2">Show More</a>
+			</section>
+
+			<section class="icons" id="iconstreat">
+				<div class="i-upper">
+					<h1>Icon Styles</h1>
+				<p>NIST uses several science themed icons, with solid lines.</p>
+				</div>
+
+				<div class="i-lower">
+					<i class="fas fa-atom"><br><p>Quantum</p></i>
+					<i class="fas fa-flask"><br><p>Chemistry</p></i>
+					<i class="fas fa-lock"><br><p>Security</p></i>
+					<i class="fas fa-heartbeat"><br><p>Health</p></i>
+					<i class="fas fa-wrench"><br><p>Construction</p></i>
+					<i class="fas fa-building"><br><p>Buildings</p></i>
+					<i class="fas fa-dna"><br><p>DNA</p></i>
+					<i class="fas fa-chalkboard-teacher"><br><p>Education</p></i>
+				</div>
+			</section>
+
+			<section class="images" id="imagestreat">
+				<div class="im-upper">
+					<h1>Image Styles</h1>
+				<p>NIST uses several science themed images of various sizes. Most of them have an interesting effect <br>where
+				   a part of the image is outside of the square shape. An example is the heads in the first two images.</p>
+				</div>
+
+				<div class="im-lower">
+					<img src="https://www.nist.gov/sites/all/themes/nist_style/images/build/nist-homepage-callout-1.png?khgsda9d" width="350px;" alt="Man with Measuring Instrument" title="Man with Measuring Instrument">
+					<img src="https://www.nist.gov/sites/all/themes/nist_style/images/build/nist-homepage-callout-2.png?khguydgklab" width="350px;" alt="Woman with Test Tube" title="Woman with Test Tube">
+					<img src="https://www.nist.gov/sites/all/themes/nist_style/images/build/nist-homepage-callout-3.png?hsdiHkjh" width="350px;" alt="Miscroscopic Image of Cells" title="Microscopic Image of Cells">
+					<img src="https://www.nist.gov/sites/default/files/styles/360w_x_360h/public/images/2018/10/22/fotolia_85192699_digital_framework_copyrt_verticalarray_fotolia-com_hr.jpg?itok=rSmcswAa" width="350px;" alt="Stylized Visualization of Data" title="Stylized Visualization of Data">
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+		 <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
