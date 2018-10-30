@@ -478,14 +478,22 @@ button {
 	opacity: 0.9;
 }
 
-.f-lower i{
-	font-size: 68px;
+.f-lower {
+	background: rgb(51, 51, 51);
+	width: 100%;
+	color: white;
+	display: flex;
 	margin-top: 30px;
-	margin-right: 25px;
+}
+
+.f-lower i{
+	font-size: 24px;
+	padding: 30px;
+	margin: auto;
+	flex: 1;
 }
 
 .f-lower p{
-	font-size: 18px;
+	font-size: 14px;
 	margin-top: 15px;
-	text-align: center;
 }
